@@ -1,0 +1,624 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+   *{
+    margin: 0;
+    padding: 0;
+   }
+
+ul{
+  list-style: none;
+}
+
+.navbar a{
+    color: #3aaa35 !important;
+}
+
+.container {
+    width: auto;
+    padding: 0 25px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container-title{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: #3aaa35;
+    text-align: center;
+}
+
+/* Modulo 1: Bordes; */
+
+.boton {
+    border: none;
+    border-radius: 4px;
+}
+
+.boton-large {
+    background: #008d36;
+    font-size: 20px;
+    width: 300px;
+    height: 60px;
+    color: #fff;
+}
+
+.boton-medium {
+    background: none;
+    border: 1.4px solid #fff;
+    color: #fff;
+    width: 178px;
+    height: 35px;
+}
+
+.boton-medium2 {
+    background: #008d36;
+    border: 1.4px solid #fff;
+    color: #fff;
+    width: 178px;
+    height: 35px;
+}
+.boton-small {
+    background: none;
+    border: 1px solid #3aaa35;
+    color: #3aaa35;
+    height: 25px;
+}
+
+.boton-large:hover {
+    background: #fff;
+    font-size: 20px;
+    width: 300px;
+    height: 60px;
+    color: #000;
+    transition: all ease 300ms;
+}
+
+.boton-medium:hover {
+    background: #fff;
+    border: 1px solid #3aaa35;
+    color: #3aaa35;
+    width: 178px;
+    height: 35px;
+    transition: all ease 300ms;
+}
+
+.boton-medium2:hover {
+    background: #fff;
+    border: 1px solid #3aaa35;
+    color: #3aaa35;
+    width: 178px;
+    height: 35px;
+    transition: all ease 300ms;
+}
+
+.boton-small:hover {
+    background: #3aaa35;
+    border: 1.4px solid #fff;
+    color: #fff;
+    height: 25px;
+    transition: all ease 300ms;
+}
+
+.circulo {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #3aaa35;
+    color: #3aaa35;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Modulo 3: Efectos de texto ; */
+
+.titulo-principal {
+    text-shadow: 2px 2px 1px rgb(0,11,63);
+    font-size: 50px;
+    color: #fff;
+    bottom: 0;
+}
+
+/* Modulo 4: Web Fonts */
+
+body {
+    font-family: 'Exo 2', sans-serif;
+}
+
+.titulo-principal-delgado {
+    font-weight: 300;
+    display: block;
+}
+
+.titulo-principal-grueso {
+    font-weight: 700;
+}
+
+/* Modulo 5: Backgrounds */
+
+#cabecera {
+    min-height: auto;
+    padding-top: 0;
+    height: 50px;
+    background: #3aaa35;
+}
+
+#guia {
+    background: #3aaa35;
+    padding: 55px 0;
+    color: #fff;
+    text-align: center;
+}
+
+/* Modulo 7: Transformaciones y transiciones */
+
+.ranking-titulo {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.ranking-titulo-h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.ranking-descripcion {
+    width: 430px;
+    margin: 0 auto;
+}
+
+.ranking-lista {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    list-style: none;
+    overflow: hidden;
+}
+
+.ranking-item {
+    width: 270px;
+}
+
+.ranking-item:nth-child(1){
+    margin-left: 0;
+}
+
+.circulo {
+    margin: 0 auto 30px auto;
+}
+
+.img-size{
+    height: 230px;
+    width: 250px;
+    margin-left: 10px;
+    border-radius: 15px 20px;
+}
+
+.ranking-titulo-app {
+    width: 50%;
+    float: left;
+    margin-top: 20px;
+}
+
+.ranking-descargar {
+    width: 50%;
+    float: right;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.icon-descarga {
+    transition: all 2s;
+}
+
+.ranking-descargar:hover .icon-descarga {
+    transform: translateY(50px);
+}
+
+#footer{
+    text-align: center;
+    text-decoration: underline;
+    margin-left: 0;
+    width: 100%;
+}
+
+
+.ir-arriba{
+    display:none;
+    padding:14px;
+    background: #3aaa35;
+    cursor: pointer;
+    position:fixed;
+    bottom: 0;
+    right: 0px;
+
+}
+
+.ir-arriba:hover{
+    background: #fff;
+    border: 1px solid #3aaa35;
+    transition: all ease 500ms;
+    border-radius: 0px 30px;
+
+}
+
+.h2-style-1{
+    background: #fff;
+    text-align: center;
+    color: transparent;
+    height: 0;
+    width: 100%;
+    bottom: 0;
+}
+
+.h2-style-2{
+    margin-top: 20px;
+    background: #fff;
+    text-align: center;
+    color: #000;
+    width: 100%;
+    bottom: 0;
+}
+
+.h2-style-3{
+    background: #3aaa35;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 1px rgb(0,11,63);
+    width: 100%;
+    bottom: 0;
+}
+
+.h2-style-4{
+    margin-top: 0px;
+    background: transparent;
+    text-align: center;
+    color: #000;
+    text-shadow: 2px 2px 1px #fff;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.up{
+    border-image: 2px;
+
+}
+.social-media{
+    left:800px;
+    top:0;
+}
+
+.social-media ul{
+list-style: none;
+text-align: center;
+
+}
+
+.social-media li{
+   display: inline;
+   text-align: center;
+}
+
+.social-media ul li a{
+    display:inline-block;
+    color: #fff;
+    border-image: #fff;
+    background: #3aaa35;
+    padding: 15px 20px;
+    margin: 0;
+    text-decoration: none;
+    -webkit-transition: all 500ms linear;
+    -moz-transition: all 500ms linear;
+    -ms-transition: all 500ms linear;
+    -o-transition: all 500ms linear;
+    transition: all 500ms linear;
+}
+
+.social-media .icon-facebook-img:hover{
+    background: #3A5795;
+    border-color: #000;
+}
+.social-media .icon-twitter-img:hover {
+    background: #5EA9DD;
+    border-color: #000;
+}
+.social-media .icon-github-img:hover {
+    background: #000;
+    border-color: #000;
+}
+.social-media .icon-instagram-img:hover {
+    background: #bc2a8d;
+    border-color: #000;
+}
+
+.img{
+    width: 100%;
+    max-width: 1300px;
+    height: 500px;
+}
+
+.slides{
+    width: 100%;
+    top:0;
+}
+
+.slidesjs-pagination{
+    background: #3aaa35;
+    list-style: none;
+    overflow: hidden;
+    margin-top: 0;
+    border-color: #3aaa35 ;
+
+}
+
+.slidesjs-container{
+    height: 500px;
+}
+
+.slidesjs-control{
+    height: 500px;
+}
+
+.slidesjs-pagination li{
+   float:left;
+    
+}
+
+.slidesjs-pagination li a{
+ display: block;
+ padding: 10px 20px;
+color:#fff;
+text-decoration: none;
+}
+
+.slidesjs-pagination li a:hover{
+background:  #229954;
+transition: all ease 500ms;
+}
+
+.slides .active{
+    background:  #229954;
+}
+
+.slidesjs-navigation{
+    background: #229954;
+    color:#fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 0px;
+    float:right;
+}
+
+.formularioBack{
+    background-color: #fff;
+}
+
+hr{
+    margin: 0;
+}
+
+.formulario-sec{
+    padding: 25px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0px auto;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,.5);
+}
+
+.item{
+    padding: 10px 40px;
+    background: #fff;
+    border-bottom: 1px solid #3aaa35;
+    border-radius: 3px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    color: #000;
+    margin: 5px 10px;
+}
+
+.item:hover {
+    background: #ccc;
+    border-bottom:1px solid #000;
+    transition: all ease 300ms;
+}
+
+.item-text{
+    border: 1px solid #3aaa35;
+    border-radius: 3px;
+    margin: 5px 10px;
+}
+
+.item-text:hover{
+    background: #ccc;
+    transition: all ease 300ms;
+    border: 1px solid #000;
+}
+
+textarea{
+    resize: none;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
